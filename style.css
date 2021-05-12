@@ -1,0 +1,525 @@
+/* pt-sans-regular - cyrillic */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./fonts/pt-sans-v12-cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/pt-sans-v12-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+	font-family: 'Post No Bills Jaffna';
+	src: url('./fonts/post-no-bills-jaffna-bold-700.ttf') format('truetype');
+}
+
+/* playfair-display-regular - cyrillic */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./fonts/playfair-display-v22-cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/playfair-display-v22-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  
+  /* playfair-display-700 - cyrillic */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), 
+         url('./fonts/playfair-display-v22-cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/playfair-display-v22-cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */  
+  }  
+  
+
+  
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+
+body{
+    background-color:  #000000;
+    font-family: 'PT Sans';
+    color: #FFFFFF;
+  }
+  
+.container{
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    color: #969696;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 14px 0;
+}
+
+
+.header-top__items > ul{
+    display: flex;
+}
+.header-top__items > ul > li{
+    padding: 0 16px;
+    border-right: 1px solid #969696;
+}
+.header-top__items > ul > li:last-child{
+    border-right: none;
+}
+.header-top__items > ul > li:first-child{
+    display: flex;
+    padding-left: 0;
+}
+.header-top__items > ul > li:first-child::before{
+    content: "";
+    height: 16px;
+    width: 16px;
+    background-image: url(./img/tel.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+.header-top__login{
+    display: flex;
+    cursor: pointer;
+    
+}
+
+.header-top__login > span{
+    margin-left: 14px;
+}
+
+.header-top__login::before{
+    background-image: url(./img/login.png);
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+
+}
+
+
+.header-memu{
+ background-color: #0F0F0F;
+}
+
+.header-memu__box{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.header-memu__logo{
+    font-family: 'Post No Bills Jaffna';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;   
+}
+.header-memu__items{
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #969696;
+    align-self: center;
+    cursor: pointer;
+    
+}
+.header-memu__items-list{
+    display: flex;
+}
+.header-memu__items-list > li{
+    margin: 0 20px;
+}
+
+.header-memu__items-list > div > img:first-child{
+    margin: 0 40px;
+}
+.header-main{
+    background-image: url('./img/header_bg.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 810px;
+    text-align: center;
+    background-position: center;
+}
+
+.header-main__wrapper{
+    margin-top: 160px;
+    margin-bottom: 130px;
+    display: inline-block;
+}
+.header-main__border{
+    width: 320px;
+    height: 320px;
+    border: 4px solid #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 80px;  
+}
+
+.header-main__border-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 185px;
+    margin: 0 auto;
+}
+h1{
+    border-bottom: 2px solid #FFFFFF;
+    font-family: 'Post No Bills Jaffna';
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.header-main__border-text{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+.header-main__text{
+text-transform: uppercase;
+font-size: 16px;
+line-height: 150%;
+max-width: 730px;
+}
+
+/* section season ==============================*/
+
+.season{
+    font-family: 'Playfair Display';
+}
+     
+.season-block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 93px;
+    max-width: 1920px; 
+    margin: 0 auto;
+    
+
+
+}
+.season-block__items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; 
+}
+
+.season-block__item{
+    margin-right: 50px;
+}
+.season-block__item:last-child{
+    margin-right: 0;
+}
+
+.season-block__item-wrapper{
+    background-color: #191B1C;
+    padding: 55px 22px 56px 23px;
+}  
+
+
+.season-block__item-title{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.season-block__item > p > span{
+    text-transform: uppercase;
+}
+
+
+.season-block__left{
+    max-width: 1040px;
+    margin: 0 80px;
+    
+}
+h3{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 0.9em;
+    
+    
+
+}
+.season-block__left > h3{
+    text-align: center;
+    margin-top: 93px;
+    
+}
+.season-block__left > h3::after{
+	border-top: 1px solid #FFFFFF;
+    width: 120px;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    transform: translateY(50px);
+    
+    
+}
+
+.season-block__right{
+    background-image: url(./img/season_right.jpg);
+    width: 880px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 730px;
+    
+}
+
+
+
+button{
+    text-transform: uppercase;
+    font-family: 'PT Sans';
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 12px 28px;
+    border: 1px solid #FFFFFF;
+    background: none;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    
+}
+.season-block__right-content > button{
+    margin-bottom: 100px;
+    margin-top: 30px;
+    
+}
+
+.season-block__right-content > h3{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.season-block__right-content{
+    text-align: center;
+    
+}
+.season-block__right-content > h3::after{
+    border-top: 1px solid #FFFFFF;
+    width: 120px;
+    content: "";
+    margin: 0 auto;
+    display: block;
+    transform: translateY(30px);
+}
+
+
+.burger{
+    display: none;
+}
+.header-mobil{
+    display: none;
+}
+
+
+@media (max-width: 1600px){
+    .season-block__item-wrapper > img{
+        width: 100%;
+    }
+    .season-block__left{
+        margin: 0 34px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 1090px){
+   .container{
+       padding: 0 12px;   
+   }
+   .season-block{
+    flex-wrap: wrap;
+   }
+
+   .season-block__items{
+    width: 100%;
+    margin-bottom: 93px;
+   }
+   .season-block__item-wrapper > img{
+    width: 100%;
+    }
+
+   .season-block__right{
+    width: 100%;
+    background-size: 100% 100%;
+    }
+    .season-block__left{
+        margin: 0 auto;
+        padding: 0 12px;
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 690px){
+    .burger{
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 25px;
+        top: 10px; 
+    }
+        
+    .burger > span::before,
+    .burger > span::after{
+        content: "";
+        background-color: #969696;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+    }
+
+    .burger > span{
+        position: absolute;
+        width: 100%;
+        background-color: #969696;
+        height: 3px;
+        top: 11px;
+    }
+    .burger > span::before{
+        transform: translateY(-10px);
+    }
+    .burger > span::after{
+     transform: translateY(10px);
+    }
+
+    .header-memu__logo{
+        font-size: 45px;
+    }
+
+    .season-block__right{
+        background-size: cover;
+    }
+
+    .season-block__items{
+        flex-direction: column;
+     
+    }
+    .season-block__item, .season-block__item:last-child{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+ 
+    .season-block__left{
+        margin: 0 auto;
+    }
+
+    .header-top{
+        display: none;
+    }
+    .header-memu__items{
+        display: none;
+    }
+    .header-main__text{
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+
+    /* мобил --------------*/
+
+    .header-mobil{
+        display: block;
+        width: 50%;
+        background-color: #0F0F0F;
+        position: fixed;
+        z-index: 1;
+        top: -430px;
+        right: 0;
+        transition: top 1s ease;
+    }
+    .header-mobil__active{
+        top: 0;
+        transition: top 1s ease;
+    }
+
+
+    .header-memu{
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+        top: 0;
+        left: 0;
+    }
+  
+    .header-top__mobil-item{
+        padding: 23px;
+        cursor: pointer;
+    }
+    .header-top__mobil-item:hover{
+        background-color: #000000;
+        color: #969696;
+    }
+
+    .header-main{
+        margin-top: 83px;
+    }
+
+    .header-top__mobil-items{
+        margin-top: revert;
+    }
+
+    /* burger active---*/
+    .burger__active > span{
+      background: none;
+    }
+
+    .burger__active > span::before{
+        transform: rotate(-45deg);
+        
+    }
+    .burger__active > span::after{
+        transform: rotate(45deg);
+        
+    }
+    
+}
+
+@media (max-width: 480px){
+    .header-mobil{
+        width: 100%;
+    }
+
+    .header-main__border{
+        width: 300px;
+        height: 300px;
+    }
+    .header-main__text{
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
